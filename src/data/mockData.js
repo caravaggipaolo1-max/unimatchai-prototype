@@ -160,6 +160,75 @@ export const jobs = [
   }
 ];
 
+export const careerQuiz = {
+  title: 'Career Preferences Quiz',
+  subtitle: 'Answer 6 short questions to refine your job matches based on your interests, goals, and work preferences.',
+  privacyLabel: 'Current User preferences only',
+  questions: [
+    {
+      id: 'sectors',
+      question: 'What sectors are you most interested in?',
+      options: ['Marketing & Brand', 'Consulting & Strategy', 'Business Analysis', 'HR & Talent Acquisition', 'Digital Marketing', 'Market Intelligence']
+    },
+    {
+      id: 'role',
+      question: 'Which type of role would you most like to start with?',
+      options: ['Marketing Analyst Intern', 'Junior Strategy Intern', 'Business Analyst Intern', 'Digital Marketing Intern', 'HR & Talent Acquisition Intern', 'Market Intelligence Intern']
+    },
+    {
+      id: 'careerGoal',
+      question: 'What is your long-term career goal?',
+      options: ['Become a marketing manager', 'Build a career in consulting', 'Specialize in business analytics', 'Work in HR and talent development', 'Grow in digital communication and branding', 'Work in strategy and market intelligence']
+    },
+    {
+      id: 'relocation',
+      question: 'Are you willing to relocate for the right opportunity?',
+      options: ['Yes, definitely', 'Yes, within Italy', 'Only near my current city', 'No, I prefer to stay local']
+    },
+    {
+      id: 'travel',
+      question: 'Are you open to business travel?',
+      options: ['Yes', 'Occasionally', 'Rarely', 'No']
+    },
+    {
+      id: 'workModel',
+      question: 'What work model do you prefer?',
+      options: ['On-site', 'Hybrid', 'Remote', 'No strong preference']
+    }
+  ],
+  defaultAnswers: {
+    sectors: 'Marketing & Brand',
+    role: 'Marketing Analyst Intern',
+    careerGoal: 'Become a marketing manager',
+    relocation: 'Yes, within Italy',
+    travel: 'Occasionally',
+    workModel: 'Hybrid'
+  },
+  refinedMatches: [
+    {
+      role: 'Marketing Analyst Intern',
+      company: 'BrandWave Srl',
+      before: 88,
+      after: 95,
+      reasons: ['aligned with preferred sector', 'aligned with career goal', 'aligned with work model preference']
+    },
+    {
+      role: 'Junior Strategy Intern',
+      company: 'Nexa Consulting',
+      before: 89,
+      after: 92,
+      reasons: ['aligned with career goal', 'aligned with mobility preference', 'aligned with business travel openness']
+    },
+    {
+      role: 'Market Intelligence Intern',
+      company: 'InsightCorp',
+      before: 84,
+      after: 90,
+      reasons: ['aligned with preferred sector', 'aligned with career goal', 'aligned with mobility preference']
+    }
+  ]
+};
+
 export const companyRankings = [
   {
     company: 'Nexa Consulting',

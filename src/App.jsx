@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import AppShell from './components/AppShell.jsx';
 import CVImprovementPage from './pages/CVImprovementPage.jsx';
+import CareerPreferencesQuizPage from './pages/CareerPreferencesQuizPage.jsx';
 import CareerPassportPage from './pages/CareerPassportPage.jsx';
 import HRDashboard from './pages/HRDashboard.jsx';
 import JobMatchingPage from './pages/JobMatchingPage.jsx';
@@ -14,6 +15,7 @@ const pages = {
   landing: LandingPage,
   student: StudentDashboard,
   jobs: JobMatchingPage,
+  quiz: CareerPreferencesQuizPage,
   cv: CVImprovementPage,
   interview: MockInterviewPage,
   hr: HRDashboard,

@@ -4,7 +4,7 @@ import JobCard from '../components/JobCard.jsx';
 import SectionHeader from '../components/SectionHeader.jsx';
 import { jobs } from '../data/mockData.js';
 
-export default function JobMatchingPage() {
+export default function JobMatchingPage({ setCurrentPage }) {
   const [query, setQuery] = useState('');
   const [type, setType] = useState('All');
   const filteredJobs = useMemo(() => jobs.filter((job) => {
@@ -16,7 +16,13 @@ export default function JobMatchingPage() {
   return (
     <div>
       {/* MVP flow: users can search, filter, and inspect explainable AI match reasons. */}
-      <SectionHeader eyebrow="Job matching" title="Mario Rossi AI-ranked opportunities">Explore Mario Rossi matched offers with personal match percentages and personal rank labels only. Other candidate rankings remain hidden in the student view.</SectionHeader>
+      <SectionHeader
+        eyebrow="Job matching"
+        title="Mario Rossi AI-ranked opportunities"
+        action={<button onClick={() => setCurrentPage('quiz')} className="focus-ring rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-700">Refine with quiz</button>}
+      >
+        Explore Mario Rossi matched offers with personal match percentages and personal rank labels only. Other candidate rankings remain hidden in the student view.
+      </SectionHeader>
       <div className="mb-6 grid gap-3 rounded-lg border border-slate-200 bg-white p-4 shadow-sm md:grid-cols-[1fr_220px]">
         <label className="flex items-center gap-3 rounded-lg border border-slate-200 px-3 py-2">
           <Search size={18} className="text-slate-400" />

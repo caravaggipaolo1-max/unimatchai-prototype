@@ -50,7 +50,10 @@ export default function StudentDashboard({ setCurrentPage }) {
               <h3 className="text-lg font-semibold text-slate-950">Mario Rossi AI job matches</h3>
               <p className="mt-1 text-sm text-slate-500">Personal view only: no full candidate leaderboard or other student details are shown.</p>
             </div>
-            <button onClick={() => setCurrentPage('jobs')} className="focus-ring rounded-lg border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50">View all</button>
+            <div className="flex flex-wrap gap-2">
+              <button onClick={() => setCurrentPage('quiz')} className="focus-ring rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-700">Take quiz</button>
+              <button onClick={() => setCurrentPage('jobs')} className="focus-ring rounded-lg border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50">View all</button>
+            </div>
           </div>
           <div className="grid gap-4">{jobs.map((job) => <JobCard key={job.id} job={job} compact />)}</div>
         </div>

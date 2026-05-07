@@ -1,9 +1,10 @@
-import { BarChart3, BriefcaseBusiness, FileText, GraduationCap, Home, LayoutDashboard, LockKeyhole, MessageSquareText, School, ShieldCheck, Users } from 'lucide-react';
+import { BarChart3, BriefcaseBusiness, FileText, GraduationCap, Home, LayoutDashboard, LockKeyhole, MessageSquareText, School, ShieldCheck, SlidersHorizontal, Users } from 'lucide-react';
 
 const navItems = [
   { id: 'landing', label: 'Home', icon: Home, scope: 'POC' },
   { id: 'student', label: 'Student dashboard', icon: LayoutDashboard, scope: 'MVP' },
   { id: 'jobs', label: 'Job matching', icon: BriefcaseBusiness, scope: 'MVP' },
+  { id: 'quiz', label: 'Preferences quiz', icon: SlidersHorizontal, scope: 'MVP' },
   { id: 'cv', label: 'CV improvement', icon: FileText, scope: 'MVP' },
   { id: 'interview', label: 'Mock interview', icon: MessageSquareText, scope: 'MVP' },
   { id: 'hr', label: 'HR shortlist', icon: Users, scope: 'MVP' },
