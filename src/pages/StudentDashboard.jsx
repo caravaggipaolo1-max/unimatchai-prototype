@@ -13,7 +13,7 @@ export default function StudentDashboard({ setCurrentPage }) {
       <SectionHeader eyebrow="Student dashboard" title={`Welcome back, ${studentProfile.name}`}>Your profile, readiness score, suggested job matches, and AI guidance are updated from simulated academic and career data.</SectionHeader>
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         <StatCard icon={Award} label="Career readiness" value={`${studentProfile.readiness}%`} detail="Interview-ready for analyst roles" tone="mint" />
-        <StatCard icon={BriefcaseBusiness} label="Top match" value="94%" detail="Marketing Analyst Graduate at MarketPulse" />
+        <StatCard icon={BriefcaseBusiness} label="Top match" value="95%" detail="Marketing Analyst Intern at BrandWave Srl" />
         <StatCard icon={FileText} label="CV priorities" value="3" detail="High-impact improvements detected" tone="amber" />
         <StatCard icon={CalendarCheck} label="Next action" value="2 mocks" detail="Recommended before applying" />
       </div>
@@ -21,7 +21,7 @@ export default function StudentDashboard({ setCurrentPage }) {
         <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
           <h3 className="text-lg font-semibold text-slate-950">Mario Rossi profile summary</h3>
           <dl className="mt-5 grid gap-4 text-sm">
-            {[['Degree', studentProfile.degree], ['University', studentProfile.university], ['Graduation', studentProfile.graduation], ['GPA', studentProfile.gpa], ['Location', studentProfile.location]].map(([label, value]) => (
+            {[['Degree', studentProfile.degree], ['University', studentProfile.university], ['Faculty', studentProfile.faculty], ['Profile type', studentProfile.profileType], ['Graduation', studentProfile.graduation], ['GPA', studentProfile.gpa], ['Location', studentProfile.location]].map(([label, value]) => (
               <div key={label} className="flex justify-between gap-4 border-b border-slate-100 pb-3">
                 <dt className="font-medium text-slate-500">{label}</dt>
                 <dd className="text-right font-semibold text-slate-900">{value}</dd>
@@ -46,10 +46,13 @@ export default function StudentDashboard({ setCurrentPage }) {
       <section className="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
         <div>
           <div className="mb-4 flex items-center justify-between">
-            <h3 className="text-lg font-semibold text-slate-950">Mario Rossi AI job matches</h3>
+            <div>
+              <h3 className="text-lg font-semibold text-slate-950">Mario Rossi AI job matches</h3>
+              <p className="mt-1 text-sm text-slate-500">Personal view only: no full candidate leaderboard or other student details are shown.</p>
+            </div>
             <button onClick={() => setCurrentPage('jobs')} className="focus-ring rounded-lg border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50">View all</button>
           </div>
-          <div className="grid gap-4">{jobs.slice(0, 3).map((job) => <JobCard key={job.id} job={job} compact />)}</div>
+          <div className="grid gap-4">{jobs.map((job) => <JobCard key={job.id} job={job} compact />)}</div>
         </div>
         <div className="space-y-6">
           <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">

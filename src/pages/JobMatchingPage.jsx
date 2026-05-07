@@ -16,7 +16,7 @@ export default function JobMatchingPage() {
   return (
     <div>
       {/* MVP flow: users can search, filter, and inspect explainable AI match reasons. */}
-      <SectionHeader eyebrow="Job matching" title="Mario Rossi AI-ranked opportunities">Explore mock opportunities with explainable match percentages and role-specific fit reasoning.</SectionHeader>
+      <SectionHeader eyebrow="Job matching" title="Mario Rossi AI-ranked opportunities">Explore Mario Rossi matched offers with personal match percentages and personal rank labels only. Other candidate rankings remain hidden in the student view.</SectionHeader>
       <div className="mb-6 grid gap-3 rounded-lg border border-slate-200 bg-white p-4 shadow-sm md:grid-cols-[1fr_220px]">
         <label className="flex items-center gap-3 rounded-lg border border-slate-200 px-3 py-2">
           <Search size={18} className="text-slate-400" />

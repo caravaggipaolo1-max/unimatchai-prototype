@@ -45,7 +45,7 @@ export default function CVImprovementPage() {
       <section className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
         <h3 className="text-lg font-semibold text-slate-950">Job-specific recommendations</h3>
         <div className="mt-4 grid gap-4 md:grid-cols-3">
-          {['Marketing Analyst Graduate', 'Business Analyst Graduate', 'Strategy Consulting Intern'].map((role) => (
+          {['Marketing Analyst Intern', 'Junior Strategy Intern', 'Market Intelligence Intern'].map((role) => (
             <div key={role} className="rounded-lg border border-slate-100 p-4">
               <p className="font-semibold text-slate-900">{role}</p>
               <p className="mt-2 text-sm leading-6 text-slate-600">Add a tailored summary, emphasize matching keywords, and reorder projects by relevance to this role.</p>

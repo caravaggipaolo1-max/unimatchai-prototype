@@ -23,6 +23,11 @@ export default function JobCard({ job, compact = false }) {
           <p className="text-xs font-medium text-slate-500">AI match</p>
         </div>
       </div>
+      {job.rankLabel && (
+        <div className="mt-4 inline-flex rounded-full bg-mint-50 px-3 py-1 text-xs font-semibold text-mint-700">
+          {job.rankLabel}
+        </div>
+      )}
       <div className="mt-4"><ProgressBar value={job.match} /></div>
       {!compact && <p className="mt-4 text-sm leading-6 text-slate-600">{job.why}</p>}
       <div className="mt-4 flex flex-wrap gap-2">

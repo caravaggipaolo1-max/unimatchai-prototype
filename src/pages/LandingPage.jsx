@@ -33,12 +33,12 @@ export default function LandingPage({ setCurrentPage }) {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-sm font-semibold text-slate-500">Mario Rossi AI match preview</p>
-                  <p className="mt-1 text-xl font-semibold">MarketPulse Marketing Analyst Graduate</p>
+                  <p className="mt-1 text-xl font-semibold">BrandWave Srl Marketing Analyst Intern</p>
                 </div>
                 <span className="rounded-full bg-mint-50 px-3 py-1 text-sm font-semibold text-mint-700">94%</span>
               </div>
               <div className="mt-5 space-y-3">
-                {['Market research project aligns with employer needs', 'CV can improve with quantified business impact', 'Two skill gaps detected before interview'].map((item) => (
+                {['95% personal match for Mario Rossi', 'Rank #1 for the BrandWave role', 'Two skill gaps detected before interview'].map((item) => (
                   <div key={item} className="rounded-lg bg-slate-50 p-3 text-sm font-medium text-slate-700">{item}</div>
                 ))}
               </div>
@@ -91,7 +91,7 @@ export default function LandingPage({ setCurrentPage }) {
       </section>
 
       <section className="grid gap-4 md:grid-cols-4">
-        {[['5', 'tailored job matches'], ['82%', 'Mario Rossi readiness'], ['3', 'CV priorities'], ['12', 'screened candidates']].map(([value, label]) => (
+        {[['6', 'Mario Rossi job matches'], ['82%', 'Mario Rossi readiness'], ['18', 'partner companies'], ['1,284', 'matches generated']].map(([value, label]) => (
           <div key={label} className="rounded-lg border border-slate-200 bg-white p-6 text-center shadow-sm">
             <p className="text-3xl font-semibold text-brand-700">{value}</p>
             <p className="mt-2 text-sm font-medium text-slate-500">{label}</p>
