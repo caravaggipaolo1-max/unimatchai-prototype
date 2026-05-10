@@ -49,7 +49,7 @@ export default function CareerPreferencesQuizPage() {
 
       {!completed ? (
         <section className="grid gap-6 xl:grid-cols-[1fr_0.75fr]">
-          <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+          <div className="surface-card p-6">
             <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <p className="text-sm font-semibold text-brand-700">Question {step + 1} of {careerQuiz.questions.length}</p>
@@ -89,7 +89,7 @@ export default function CareerPreferencesQuizPage() {
             </div>
           </div>
 
-          <aside className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+          <aside className="surface-card p-6">
             <div className="flex items-center gap-3">
               <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-brand-50 text-brand-700"><SlidersHorizontal size={21} /></div>
               <div>
@@ -124,7 +124,7 @@ export default function CareerPreferencesQuizPage() {
 
           <div className="grid gap-4 lg:grid-cols-3">
             {careerQuiz.refinedMatches.map((match) => (
-              <article key={match.role} className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+              <article key={match.role} className="surface-card p-5">
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <h3 className="text-lg font-semibold text-slate-950">{match.role}</h3>
@@ -152,7 +152,7 @@ export default function CareerPreferencesQuizPage() {
             ))}
           </div>
 
-          <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+          <div className="surface-card p-6">
             <h3 className="text-lg font-semibold text-slate-950">Final preference summary</h3>
             <div className="mt-4 grid gap-3 md:grid-cols-2">
               {answerSummary.map((item) => (

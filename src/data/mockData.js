@@ -17,7 +17,7 @@ export const mvpFeatures = [
 ];
 
 export const studentProfile = {
-  name: 'Mario Rossi',
+  name: 'Current User',
   degree: 'Market and Strategy Business',
   university: 'Università Cattolica del Sacro Cuore',
   faculty: 'Faculty of Economics',
@@ -45,7 +45,7 @@ export const demoUsers = {
 
 export const studentProfiles = [
   {
-    id: 'Mario Rossi',
+    id: 'Current User',
     university: 'Università Cattolica del Sacro Cuore',
     degree: 'Market and Strategy Business',
     profileType: 'Final-year student / recent graduate',
@@ -80,7 +80,7 @@ export const jobs = [
     salary: 'Paid internship',
     tags: ['Strategic Thinking', 'Business Analysis', 'Excel', 'Research'],
     requirements: ['Strategic thinking', 'Business analysis', 'Presentations', 'Excel', 'Research'],
-    why: 'Strong fit with Mario Rossi strategy coursework, business case experience, and presentation strengths.',
+    why: 'Strong fit with Current User strategy coursework, business case experience, and presentation strengths.',
     status: 'Top 3 candidate'
   },
   {
@@ -95,7 +95,7 @@ export const jobs = [
     salary: 'Paid internship',
     tags: ['Marketing Analysis', 'Competitor Analysis', 'Excel', 'Reporting'],
     requirements: ['Marketing analysis', 'Competitor analysis', 'Excel', 'Reporting', 'Campaign support'],
-    why: 'Best match for Mario Rossi Market and Strategy Business profile, competitor analysis interests, and brand positioning skills.',
+    why: 'Best match for Current User Market and Strategy Business profile, competitor analysis interests, and brand positioning skills.',
     status: 'Best match'
   },
   {
@@ -110,7 +110,7 @@ export const jobs = [
     salary: 'Paid internship',
     tags: ['Communication', 'Organisation', 'Screening', 'Employer Branding'],
     requirements: ['Communication', 'Organisation', 'Screening', 'Stakeholder interaction', 'Employer branding mindset'],
-    why: 'Some communication and stakeholder overlap, but the role is less aligned with Mario Rossi marketing and strategy goals.',
+    why: 'Some communication and stakeholder overlap, but the role is less aligned with Current User marketing and strategy goals.',
     status: 'Lower fit'
   },
   {
@@ -125,7 +125,7 @@ export const jobs = [
     salary: 'Paid internship',
     tags: ['Excel', 'Problem Solving', 'Reporting', 'Process Analysis'],
     requirements: ['Excel', 'Problem solving', 'Reporting', 'Process analysis', 'Analytical mindset'],
-    why: 'Relevant to Mario Rossi business analysis goals, with room to strengthen operations and process analysis examples.',
+    why: 'Relevant to Current User business analysis goals, with room to strengthen operations and process analysis examples.',
     status: 'Recommended'
   },
   {
@@ -140,7 +140,7 @@ export const jobs = [
     salary: 'Paid internship',
     tags: ['Social Media', 'Communication', 'Content Planning', 'Engagement Analysis'],
     requirements: ['Social media', 'Communication', 'Campaign support', 'Content planning', 'Engagement analysis'],
-    why: 'Good secondary option for Mario Rossi, especially if he wants to connect strategy work with digital campaign execution.',
+    why: 'Good secondary option for Current User, especially for connecting strategy work with digital campaign execution.',
     status: 'Top 3 candidate'
   },
   {
@@ -155,7 +155,7 @@ export const jobs = [
     salary: 'Paid internship',
     tags: ['Market Research', 'Competitor Analysis', 'Strategic Analysis', 'Synthesis'],
     requirements: ['Market research', 'Competitor analysis', 'Strategic analysis', 'Presentation', 'Synthesis skills'],
-    why: 'Strong alignment with Mario Rossi research, strategy, and synthesis skills from Market and Strategy Business coursework.',
+    why: 'Strong alignment with Current User research, strategy, and synthesis skills from Market and Strategy Business coursework.',
     status: 'Top 3 candidate'
   }
 ];
@@ -229,6 +229,105 @@ export const careerQuiz = {
   ]
 };
 
+export const accessPlans = {
+  studentFree: [
+    'Profile access',
+    'Target role selection',
+    'Skill-gap analysis',
+    'Learning resources',
+    'Progress tracking',
+    'Basic match recalculation'
+  ],
+  studentPremium: [
+    'Company-specific interview questions',
+    'Business case simulations',
+    'AI simulation feedback',
+    'Saved simulation results',
+    'Career Passport generation',
+    'Selective sharing and export'
+  ],
+  companyFree: [
+    'Basic candidate skill-fit overview',
+    'Company-owned role visibility',
+    'GDPR-safe candidate labels'
+  ],
+  companyPremium: [
+    'Premium candidate review',
+    'Detailed candidate comparison',
+    'Simulation result insights',
+    'Multi-seat company access'
+  ]
+};
+
+export const targetRoleOptions = [
+  {
+    role: 'Marketing Analyst Intern',
+    updatedMatch: 95,
+    missingSkills: [
+      { skill: 'Campaign dashboarding', gap: 32, priority: 1 },
+      { skill: 'Advanced Excel', gap: 26, priority: 2 },
+      { skill: 'Data storytelling', gap: 18, priority: 3 }
+    ]
+  },
+  {
+    role: 'Junior Strategy Intern',
+    updatedMatch: 92,
+    missingSkills: [
+      { skill: 'Market sizing', gap: 34, priority: 1 },
+      { skill: 'Case interview structure', gap: 25, priority: 2 },
+      { skill: 'Executive storytelling', gap: 20, priority: 3 }
+    ]
+  },
+  {
+    role: 'Business Analyst Intern',
+    updatedMatch: 86,
+    missingSkills: [
+      { skill: 'Process analysis', gap: 30, priority: 1 },
+      { skill: 'Advanced Excel', gap: 24, priority: 2 },
+      { skill: 'Operations reporting', gap: 19, priority: 3 }
+    ]
+  }
+];
+
+export const learningResources = [
+  { title: 'Advanced Excel for Business Cases', type: 'Course', duration: '3 hours', relevance: 'High', skill: 'Advanced Excel' },
+  { title: 'Market Sizing Practice Pack', type: 'Material', duration: '45 min', relevance: 'High', skill: 'Market sizing' },
+  { title: 'Data Storytelling for Presentations', type: 'Course', duration: '2 hours', relevance: 'Medium', skill: 'Data storytelling' },
+  { title: 'Campaign KPI Dashboard Template', type: 'Material', duration: '30 min', relevance: 'High', skill: 'Campaign dashboarding' },
+  { title: 'Mock Case Interview: Market Entry', type: 'Practice', duration: '60 min', relevance: 'High', skill: 'Case interview structure' }
+];
+
+export const learningProgress = [
+  { skill: 'Advanced Excel', value: 48 },
+  { skill: 'Market sizing', value: 62 },
+  { skill: 'Presentation skills', value: 71 },
+  { skill: 'Data storytelling', value: 54 }
+];
+
+export const premiumStudentSimulations = [
+  {
+    title: 'BrandWave interview set',
+    type: 'Company-specific interview questions',
+    status: 'Premium',
+    feedback: 'Strong brand reasoning; improve metric specificity and campaign tradeoff examples.'
+  },
+  {
+    title: 'Nexa market-entry business case',
+    type: 'Company-specific business case',
+    status: 'Premium',
+    feedback: 'Clear structure and hypotheses; add stronger quantitative sizing assumptions.'
+  }
+];
+
+export const premiumPassportSharing = [
+  { label: 'Academic summary', enabled: true },
+  { label: 'Skill-gap progress', enabled: true },
+  { label: 'Premium simulation feedback', enabled: false },
+  { label: 'Interview readiness score', enabled: true }
+];
+
+export const premiumCompanySeats = ['HR_001', 'HR_002', 'HR_003'];
+
 export const companyRankings = [
   {
     company: 'Nexa Consulting',
@@ -237,7 +336,7 @@ export const companyRankings = [
     ranking: [
       { rank: 1, candidate: 'Student_002', match: 94, strengths: ['Consulting cases', 'Business analysis'], gaps: ['Executive polish'] },
       { rank: 2, candidate: 'Student_006', match: 93, strengths: ['Market research', 'Strategy synthesis'], gaps: ['Excel speed'] },
-      { rank: 3, candidate: 'Mario Rossi', match: 92, strengths: ['Strategic thinking', 'Presentations'], gaps: ['Advanced Excel modeling'] },
+      { rank: 3, candidate: 'Current User', match: 92, strengths: ['Strategic thinking', 'Presentations'], gaps: ['Advanced Excel modeling'] },
       { rank: 4, candidate: 'Student_004', match: 78, strengths: ['Reporting', 'Analytical mindset'], gaps: ['Client storytelling'] },
       { rank: 5, candidate: 'Student_003', match: 64, strengths: ['Communication'], gaps: ['Business analysis depth'] },
       { rank: 6, candidate: 'Student_005', match: 57, strengths: ['Stakeholder interaction'], gaps: ['Strategy cases'] }
@@ -248,7 +347,7 @@ export const companyRankings = [
     role: 'Marketing Analyst Intern',
     requirements: ['Marketing analysis', 'Competitor analysis', 'Excel', 'Reporting', 'Campaign support'],
     ranking: [
-      { rank: 1, candidate: 'Mario Rossi', match: 95, strengths: ['Market research', 'Brand positioning'], gaps: ['Campaign dashboarding'] },
+      { rank: 1, candidate: 'Current User', match: 95, strengths: ['Market research', 'Brand positioning'], gaps: ['Campaign dashboarding'] },
       { rank: 2, candidate: 'Student_003', match: 84, strengths: ['Digital marketing', 'Communication'], gaps: ['Excel reporting'] },
       { rank: 3, candidate: 'Student_006', match: 80, strengths: ['Competitor analysis', 'Synthesis'], gaps: ['Campaign operations'] },
       { rank: 4, candidate: 'Student_002', match: 72, strengths: ['Business analysis'], gaps: ['Marketing depth'] },
@@ -264,7 +363,7 @@ export const companyRankings = [
       { rank: 1, candidate: 'Student_005', match: 95, strengths: ['Employer branding', 'Screening'], gaps: ['Data reporting'] },
       { rank: 2, candidate: 'Student_003', match: 76, strengths: ['Communication', 'Content planning'], gaps: ['Screening process'] },
       { rank: 3, candidate: 'Student_002', match: 63, strengths: ['Organisation'], gaps: ['HR motivation'] },
-      { rank: 4, candidate: 'Mario Rossi', match: 61, strengths: ['Stakeholder communication'], gaps: ['Talent acquisition exposure'] },
+      { rank: 4, candidate: 'Current User', match: 61, strengths: ['Stakeholder communication'], gaps: ['Talent acquisition exposure'] },
       { rank: 5, candidate: 'Student_006', match: 58, strengths: ['Research'], gaps: ['Employer branding'] },
       { rank: 6, candidate: 'Student_004', match: 52, strengths: ['Process analysis'], gaps: ['Candidate communication'] }
     ]
@@ -276,7 +375,7 @@ export const companyRankings = [
     ranking: [
       { rank: 1, candidate: 'Student_004', match: 94, strengths: ['Reporting', 'Operations analysis'], gaps: ['Presentation confidence'] },
       { rank: 2, candidate: 'Student_002', match: 91, strengths: ['Business analysis', 'Excel'], gaps: ['Retail domain'] },
-      { rank: 3, candidate: 'Mario Rossi', match: 83, strengths: ['Business strategy', 'Stakeholder reporting'], gaps: ['Process analysis depth'] },
+      { rank: 3, candidate: 'Current User', match: 83, strengths: ['Business strategy', 'Stakeholder reporting'], gaps: ['Process analysis depth'] },
       { rank: 4, candidate: 'Student_006', match: 79, strengths: ['Market intelligence'], gaps: ['Operations reporting'] },
       { rank: 5, candidate: 'Student_003', match: 58, strengths: ['Communication'], gaps: ['Analytical tooling'] },
       { rank: 6, candidate: 'Student_005', match: 54, strengths: ['Organisation'], gaps: ['Problem solving cases'] }
@@ -288,7 +387,7 @@ export const companyRankings = [
     requirements: ['Social media', 'Communication', 'Campaign support', 'Content planning', 'Engagement analysis'],
     ranking: [
       { rank: 1, candidate: 'Student_003', match: 96, strengths: ['Digital marketing', 'Content planning'], gaps: ['Advanced analytics'] },
-      { rank: 2, candidate: 'Mario Rossi', match: 74, strengths: ['Brand positioning', 'Communication'], gaps: ['Hands-on social media tools'] },
+      { rank: 2, candidate: 'Current User', match: 74, strengths: ['Brand positioning', 'Communication'], gaps: ['Hands-on social media tools'] },
       { rank: 3, candidate: 'Student_005', match: 73, strengths: ['Employer branding', 'Communication'], gaps: ['Campaign analysis'] },
       { rank: 4, candidate: 'Student_006', match: 62, strengths: ['Research'], gaps: ['Content operations'] },
       { rank: 5, candidate: 'Student_002', match: 55, strengths: ['Business analysis'], gaps: ['Social media fluency'] },
@@ -301,7 +400,7 @@ export const companyRankings = [
     requirements: ['Market research', 'Competitor analysis', 'Strategic analysis', 'Presentation', 'Synthesis skills'],
     ranking: [
       { rank: 1, candidate: 'Student_006', match: 92, strengths: ['Market research', 'Strategic analysis'], gaps: ['Client presentation pace'] },
-      { rank: 2, candidate: 'Mario Rossi', match: 90, strengths: ['Competitor analysis', 'Synthesis'], gaps: ['Advanced research databases'] },
+      { rank: 2, candidate: 'Current User', match: 90, strengths: ['Competitor analysis', 'Synthesis'], gaps: ['Advanced research databases'] },
       { rank: 3, candidate: 'Student_002', match: 88, strengths: ['Business analysis', 'Problem solving'], gaps: ['Market intelligence tools'] },
       { rank: 4, candidate: 'Student_004', match: 81, strengths: ['Analytical mindset'], gaps: ['Strategic storytelling'] },
       { rank: 5, candidate: 'Student_003', match: 70, strengths: ['Communication'], gaps: ['Research depth'] },
@@ -314,7 +413,7 @@ export const cvSuggestions = [
   {
     title: 'Quantify business project outcomes',
     impact: 'High',
-    detail: 'Add measurable results to Mario Rossi market segmentation project, such as target segment size, revenue potential, or campaign impact.'
+    detail: 'Add measurable results to Current User market segmentation project, such as target segment size, revenue potential, or campaign impact.'
   },
   {
     title: 'Align keywords to target role',
@@ -337,19 +436,19 @@ export const skillGaps = [
 
 export const interviewQuestions = {
   Marketing: [
-    'Mario Rossi, tell me about a market research project and the recommendation you made.',
+    'Tell me about a market research project and the recommendation you made.',
     'How would you evaluate whether a new brand campaign is working?',
     'How would you segment customers for a new student banking product?',
     'Which KPIs would you track after a go-to-market launch?'
   ],
   Consulting: [
-    'Mario Rossi, how would you estimate the market size for premium coffee subscriptions in Italy?',
+    'How would you estimate the market size for premium coffee subscriptions in Italy?',
     'A retail client is losing market share. How would you structure the diagnosis?',
     'Walk me through a time you influenced a team without authority.',
     'How would you prioritize three growth initiatives for a mid-sized company?'
   ],
   Strategy: [
-    'Mario Rossi, how would you compare two possible market entry strategies?',
+    'How would you compare two possible market entry strategies?',
     'How would you assess whether a brand should launch a lower-price product line?',
     'Tell me about a tradeoff between user value and business value.',
     'What would you do if sales increased but brand perception declined?'
@@ -357,7 +456,7 @@ export const interviewQuestions = {
 };
 
 export const candidates = [
-  { id: 1, name: 'Mario Rossi', role: 'Marketing Analyst', match: 95, gpa: 28.1, readiness: 82, skills: ['Market Research', 'Strategy', 'Excel'], stage: 'Shortlisted', reviewer: 'HR_001' },
+  { id: 1, name: 'Current User', role: 'Marketing Analyst', match: 95, gpa: 28.1, readiness: 82, skills: ['Market Research', 'Strategy', 'Excel'], stage: 'Shortlisted', reviewer: 'HR_001' },
   { id: 2, name: 'Student_002', role: 'Business Analyst', match: 91, gpa: 27.9, readiness: 77, skills: ['Excel', 'Business Analysis', 'Strategy'], stage: 'Review', reviewer: 'HR_001' },
   { id: 3, name: 'Student_003', role: 'Digital Marketing Intern', match: 96, gpa: 29.1, readiness: 79, skills: ['Communication', 'Campaigns', 'Content Planning'], stage: 'Interview', reviewer: 'HR_002' },
   { id: 4, name: 'Student_004', role: 'Business Analyst Intern', match: 94, gpa: 28.2, readiness: 72, skills: ['Reporting', 'Operations', 'Excel'], stage: 'Review', reviewer: 'HR_001' },

@@ -21,7 +21,7 @@ export default function UniversityAdminPage() {
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         <StatCard icon={GraduationCap} label="Total active students" value={universityMetrics.totalActiveStudents} detail="Students using the platform" />
         <StatCard icon={FileText} label="CVs uploaded" value={universityMetrics.cvsUploaded} detail="CV improvement usage base" tone="mint" />
-        <StatCard icon={MessageSquareText} label="Mock interviews" value={universityMetrics.mockInterviewsCompleted} detail="Completed practice sessions" tone="amber" />
+        <StatCard icon={MessageSquareText} label="Mock interviews" value={universityMetrics.mockInterviewsCompleted} detail="Completed practice sessions" tone="brand" />
         <StatCard icon={School} label="Avg readiness" value={`${universityMetrics.averageCareerReadiness}/100`} detail="Career readiness score" />
       </div>
 
@@ -29,22 +29,22 @@ export default function UniversityAdminPage() {
         <StatCard icon={TrendingUp} label="Matches generated" value={universityMetrics.totalMatchesGenerated.toLocaleString()} detail="Across students and roles" />
         <StatCard icon={Users} label="Avg match score" value={`${universityMetrics.averageMatchScore}%`} detail="Across generated matches" tone="mint" />
         <StatCard icon={Building2} label="Partner companies" value={universityMetrics.activePartnerCompanies} detail="Active company accounts" />
-        <StatCard icon={Building2} label="Published offers" value={universityMetrics.publishedJobOffers} detail="Open company postings" tone="amber" />
+        <StatCard icon={Building2} label="Published offers" value={universityMetrics.publishedJobOffers} detail="Open company postings" tone="brand" />
       </div>
 
       <section className="grid gap-6 xl:grid-cols-2">
-        <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+        <div className="surface-card p-6">
           <h3 className="text-lg font-semibold text-slate-950">Top career interests</h3>
           <div className="mt-5"><BarChart data={universityMetrics.topCareerInterests} /></div>
         </div>
-        <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+        <div className="surface-card p-6">
           <h3 className="text-lg font-semibold text-slate-950">Most common skill gaps</h3>
           <div className="mt-5"><BarChart data={universityMetrics.mostCommonSkillGaps} /></div>
         </div>
       </section>
 
       <section className="grid gap-6 xl:grid-cols-[0.9fr_1.1fr]">
-        <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+        <div className="surface-card p-6">
           <h3 className="text-lg font-semibold text-slate-950">Platform usage rates</h3>
           <div className="mt-5 space-y-5">
             <ProgressBar value={universityMetrics.cvImprovementUsageRate} label="CV improvement usage rate" tone="mint" />
@@ -52,7 +52,7 @@ export default function UniversityAdminPage() {
             {universityMetrics.placementPipeline.map((item) => <ProgressBar key={item.label} value={item.value} label={item.label} />)}
           </div>
         </div>
-        <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+        <div className="surface-card p-6">
           <h3 className="text-lg font-semibold text-slate-950">Company and satisfaction analytics</h3>
           <div className="mt-5 grid gap-4 md:grid-cols-2">
             <div className="rounded-lg bg-slate-50 p-4">
