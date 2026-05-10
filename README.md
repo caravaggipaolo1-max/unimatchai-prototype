@@ -1,6 +1,6 @@
-# UniMatchAI Frontend Prototype
+# BrAInHUB Frontend Prototype
 
-UniMatchAI is a clickable React and Tailwind CSS prototype for an AI-powered university-to-work matching platform. It is designed for demos and presentations with mock data and simulated AI outputs.
+BrAInHUB is a clickable React and Tailwind CSS prototype for an AI-powered university-to-work matching platform. It is designed for demos and presentations with mock data and simulated AI outputs.
 
 ## Run Locally
 

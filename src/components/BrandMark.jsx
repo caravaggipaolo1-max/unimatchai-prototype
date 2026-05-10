@@ -9,9 +9,9 @@ export default function BrandMark({ compact = false, inverted = false }) {
       {!compact && (
         <div>
           <p className={`text-xl font-semibold tracking-tight ${inverted ? 'text-white' : 'text-slate-950'}`}>
-            UniMatch<span className={inverted ? 'text-blue-200' : 'text-brand-600'}>AI</span>
+            Br<span className={inverted ? 'text-blue-200' : 'text-brand-600'}>AI</span>nHUB
           </p>
-          <p className={`text-xs font-medium ${inverted ? 'text-blue-100' : 'text-slate-500'}`}>Intelligent career matching</p>
+          <p className={`text-xs font-medium ${inverted ? 'text-blue-100' : 'text-slate-500'}`}>University-to-work intelligence</p>
         </div>
       )}
     </div>

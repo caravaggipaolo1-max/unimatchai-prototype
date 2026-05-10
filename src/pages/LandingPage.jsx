@@ -32,7 +32,7 @@ export default function LandingPage({ setCurrentPage }) {
               AI-powered career matching for students, companies, and universities
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-              UniMatchAI helps students discover the right opportunities, supports companies in identifying stronger candidates, and gives universities clearer career insights through intelligent matching.
+              BrAInHUB helps students discover the right opportunities, supports companies in identifying stronger candidates, and gives universities clearer career insights through intelligent matching.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <button onClick={() => setCurrentPage('student')} className="focus-ring inline-flex items-center gap-2 rounded-lg bg-brand-600 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-brand-700">
@@ -82,7 +82,7 @@ export default function LandingPage({ setCurrentPage }) {
 
       <section>
         <SectionHeader eyebrow="How it works" title="A simple path from profile to career insight">
-          UniMatchAI combines student inputs, role requirements, and learning progress into a clearer career-readiness workflow.
+          BrAInHUB combines student inputs, role requirements, and learning progress into a clearer career-readiness workflow.
         </SectionHeader>
         <div className="grid gap-4 md:grid-cols-3">
           {steps.map(([title, text], index) => (

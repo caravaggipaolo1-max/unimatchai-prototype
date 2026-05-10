@@ -10,7 +10,7 @@ export default function UniversityAdminPage() {
     <div className="space-y-6">
       {/* University users see aggregate platform analytics across students and companies. */}
       <SectionHeader eyebrow="University analytics" title={`${universityMetrics.admin} career service overview`}>
-        Aggregated view across the UniMatchAI platform: student readiness, company activity, usage rates, and skill gaps without individual student rankings.
+        Aggregated view across the BrAInHUB platform: student readiness, company activity, usage rates, and skill gaps without individual student rankings.
       </SectionHeader>
 
       <div className="rounded-lg border border-brand-100 bg-brand-50 p-4">
